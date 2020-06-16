@@ -36,7 +36,7 @@ CREATE TABLE tags(
 );
 
 
-CREATE TABLE taggale(
+CREATE TABLE taggable(
 	tag_id int,
 	photo_id int,
 	created_at DATETIME,
