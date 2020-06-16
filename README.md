@@ -1,4 +1,4 @@
-## Create Table
+# Create Table
 '''
 CREATE TABLE users (
 	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -57,7 +57,7 @@ CREATE TABLE photo_descriptions(
 );
 '''
 
-## INSERT DATA
+# INSERT DATA
 
 '''
 INSERT INTO users (email,password,role)
@@ -89,7 +89,7 @@ INSERT INTO photo_descriptions (id,content)
 VALUES (1,'That is a normal day');
 '''
 
-## QUERY
+# QUERY
 
 '''
     select p.title, c.name ,(select pd.content from photo_descriptions as pd where pd.id = p.id) as  descriptions 
