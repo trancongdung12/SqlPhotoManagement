@@ -1,5 +1,5 @@
 # Create Table
-'''
+```
 CREATE TABLE users (
 	id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
 	email VARCHAR(50),
@@ -55,7 +55,7 @@ CREATE TABLE photo_descriptions(
 	FOREIGN KEY (id) REFERENCES photos(id),
 	PRIMARY KEY (id)
 );
-'''
+```
 
 # INSERT DATA
 
