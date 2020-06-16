@@ -59,7 +59,7 @@ CREATE TABLE photo_descriptions(
 
 # INSERT DATA
 
-'''
+```
 INSERT INTO users (email,password,role)
 VALUES ('dung@gmail.com','123','users'),
 	   ('admin','admin','admin');
@@ -87,12 +87,12 @@ VALUES (1,1),
        
 INSERT INTO photo_descriptions (id,content)
 VALUES (1,'That is a normal day');
-'''
+```
 
 # QUERY
 
-'''
+```
     select p.title, c.name ,(select pd.content from photo_descriptions as pd where pd.id = p.id) as  descriptions 
     ,(select group_concat(t.name) from tags as t, taggale as tg where tg.tag_id = t.id and tg.photo_id = p.id  ) as  tags 
     from photos as p , categories as c where p.category_id = c.id ;
-'''
+```
